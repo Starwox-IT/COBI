@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  scroll-behavior: smooth;
+}
+body {
+  --clr-primary: #de7e5d;
+  font-family: Poppins, sans-serif;
+
+  --clr-grey-200: #d2d2d2;
+  --clr-grey-100: #fafafa;
+}
+header {
+  padding: 4rem 0;
+}
+
+.nav_list {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-left: auto;
+  list-style: none;
+  max-width: 150px;
+}
+.nav_link {
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+}
+.container {
+  margin-inline: auto;
+  width: 90%;
+}
+
+.main {
+  display: grid;
+  gap: 1em;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  max-width: 36.69rem;
+  margin-inline: auto;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+form {
+  display: grid;
+  gap: 0.75rem;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+.form_group {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.row {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.icon svg {
+  height: 5.625rem;
+  width: 5.625rem;
+}
+
+.ni {
+  scale: 1.18;
+}
+label {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+input {
+  border-radius: 0.625rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--clr-grey-200);
+  outline: transparent;
+  font-size: clamp(1rem, 3vw, 1.37rem);
+}
+
+.password {
+  position: relative;
+}
+#password {
+  width: 100%;
+  padding-right: 1rem;
+}
+.eyes {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.register {
+  border: none;
+  border-radius: 0.625rem;
+  color: var(--clr-grey-100);
+  outline: transparent;
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  padding: 1em 0;
+  font-size: clamp(1rem, 3vw, 1.37rem);
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.accent {
+  color: var(--clr-primary);
+}
+
+.small {
+  text-align: center;
+}
+
+::placeholder {
+  font-family: Poppins, sans-serif;
+  color: var(--clr-grey-200);
+  font-size: inherit;
+  font-size: clamp(1rem, 3vw, 1.37rem);
+}

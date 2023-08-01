@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      src="https://kit.fontawesome.com/b0e881e9ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="">
+      <div class="container">
+        <div class="flex_container">
+          <div class="logo_and_hamburger">
+            <span class="logos"
+              ><img
+                src="../../images/logo.png"
+                alt="company_logo"
+                class="logo"
+              />
+              <img
+                src="../../images/dark_logo.png"
+                alt="company_logo"
+                class="logo hidden"
+              />
+            </span>
+            <span class="hamburger_icons">
+              <img
+                src="../../images/hamburger.svg"
+                alt="hamburger_icon"
+                class="hamburger"
+              />
+              <img
+                src="../../images/hamburger_cross.svg"
+                alt="hamburger_icon"
+                class="hamburger hidden"
+              />
+            </span>
+          </div>
+          <nav class="hidden">
+            <ul class="nav_list">
+              <li><a href="../Home/index.html" class="nav_link">Home</a></li>
+              <li><a href="../Contact/contact.html" class="nav_link">About</a></li>
+              <li><a href="#" class="nav_link">Contact</a></li>
+              <li class="hidden">
+                <a href="#" class="nav_link btn sign_in">Sign In</a>
+              </li>
+              <li class="hidden">
+                <a href="#" class="nav_link btn sign_up sign_up">Get Started</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="header">
+          <h1>Contact Us</h1>
+          <p>Any question or remarks? Just write us a message!</p>
+        </section>
+        <section class="body">
+          <div class="contact_information">
+            <div class="info_header">
+              <h2>Contact Information</h2>
+              <p>Say something to start a live chat!</p>
+            </div>
+
+            <ul class="contact_list">
+              <li>
+                <span class="icon"
+                  ><img
+                    src="../../images/phone_white.png"
+                    alt="phone-icon" /></span
+                ><span>(406) 555-0120</span>
+              </li>
+              <li>
+                <span class="icon"
+                  ><img src="../../images/email_white.svg" alt="email-icon"
+                /></span>
+                <span>mangcoding123@gmail.com</span>
+              </li>
+              <li>
+                <span class="icon"
+                  ><img
+                    src="../../images/location_white.svg"
+                    alt="location-icon"
+                /></span>
+                <span
+                  >132 Dartmouth Street Boston, Massachusetts 02156 United
+                  States
+                </span>
+              </li>
+            </ul>
+
+            <div class="info_icons">
+              <span class="icon"
+                ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span
+              ><span class="icon"
+                ><a href="#"><i class="fa-brands fa-twitter"></i></a></span
+              ><span class="icon"
+                ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span
+              ><span class="icon"
+                ><a href="#"><i class="fa-brands fa-instagram"></i></a
+              ></span>
+            </div>
+          </div>
+
+          <form>
+            <div class="form_row">
+              <div class="form_group">
+                <label for="first_name">First Name</label>
+                <input id="first_name" name="first_name" type="text" />
+              </div>
+              <div class="form_group">
+                <label for="last_name">Last Name</label>
+                <input id="last_name" name="last_name" type="text" />
+              </div>
+            </div>
+            <div class="form_row">
+              <div class="form_group">
+                <label for="email">First Name</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="John"
+                />
+              </div>
+              <div class="form_group">
+                <label for="phone_no">Last Name</label>
+                <input
+                  id="phone_no"
+                  name="phone_no"
+                  type="text"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+            <h3 class="radio_title">Select Subject</h3>
+            <div class="form_row radio_row">
+              <div class="radio_group">
+                <input type="radio" name="subject" id="subject_1" />
+                <label for="subject_1">General Inquiry</label>
+              </div>
+              <div class="radio_group">
+                <input type="radio" name="subject" id="subject_2" />
+                <label for="subject_2">General Inquiry</label>
+              </div>
+              <div class="radio_group">
+                <input type="radio" name="subject" id="subject_3" />
+                <label for="subject_3">General Inquiry</label>
+              </div>
+              <div class="radio_group">
+                <input type="radio" name="subject" id="subject_4" />
+                <label for="subject_4">General Inquiry</label>
+              </div>
+            </div>
+            <div class="message_input_row">
+              <label for="message">Message</label>
+              <input
+                id="message"
+                name="message"
+                type="text"
+                placeholder="Write your message..."
+              />
+            </div>
+            <div class="btn_container">
+              <button>Send Message</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="grid_cols_4">
+          <section class="footer_logo_section">
+            <img class="logo" src="../../images/logo.png" alt="company_logo" />
+            <p>
+              Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom
+              diska. Jinesade bel när feras redorade i belogi. FAR paratyp i
+              muvåning, och pesask vyfisat. Viktiga poddradio har un mad och
+              inde.
+            </p>
+            <div class="footer_icons">
+              <span class="icon"
+                ><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span
+              ><span class="icon"
+                ><a href="#"><i class="fa-brands fa-twitter"></i></a></span
+              ><span class="icon"
+                ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span
+              ><span class="icon"
+                ><a href="#"><i class="fa-brands fa-instagram"></i></a
+              ></span>
+            </div>
+          </section>
+          <section class="footer_pages_section">
+            <h2>Pages</h2>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="../Home/index.html">Home</a>
+              </li>
+              <li><a class="footer_link" href="../About/about.html">About</a></li>
+              <li><a class="footer_link" href="#">Contact</a></li>
+            </ul>
+          </section>
+          <section class="footer_service_section">
+            <h2>Service</h2>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="">Saving</a>
+              </li>
+              <li><a class="footer_link" href="">Target</a></li>
+              <li><a class="footer_link" href="">Inset & Save</a></li>
+            </ul>
+          </section>
+          <section class="footer_contact_section">
+            <h2>Contact</h2>
+            <ul class="footer_list">
+              <li>
+                <span class="icon"
+                  ><img src="../../images/phone.svg" alt="phone-icon" /></span
+                ><span>(406) 555-0120</span>
+              </li>
+              <li>
+                <span class="icon"
+                  ><img src="../../images/email.svg" alt="email-icon"
+                /></span>
+                <span>mangcoding123@gmail.com</span>
+              </li>
+              <li>
+                <span class="icon location"
+                  ><img src="../../images/location-dot.svg" alt="location-icon"
+                /></span>
+                <span>2972 Westheimer Rd. Santa Ana, Illinois 85486 </span>
+              </li>
+            </ul>
+          </section>
+          <section class="footer_legal_section">
+            <h2>Legal</h2>
+            <div class="legal row">
+              <span><a class="footer_link" href="#">Privacy Policy</a></span
+              ><span><a class="footer_link" href="#">Terms & services</a></span
+              ><span><a class="footer_link" href="#">Terms of Use</a></span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>

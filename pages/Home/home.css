@@ -1,0 +1,536 @@
+/**************** MAIN STYLES ****************/
+main {
+  color: var(--clr-black-300);
+  font-size: clamp(0.75rem, 3vw, 1rem);
+  text-align: center;
+}
+/**************** GENERAL STYLES ****************/
+.row:not(.legal) {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 5rem;
+  margin-bottom: 9%;
+}
+h1 {
+  margin-block: 1.63rem 0.75rem;
+}
+.trusted h2,
+.why h2,
+h3:not(.create_acct h3),
+.newsletter h2,
+.insurance_plans h2 {
+  font-size: clamp(1.2rem, 5vw, 2rem);
+}
+p {
+  font-family: Poppins;
+}
+img {
+  width: 100%;
+}
+button {
+  border: none;
+  cursor: pointer;
+  outline: transparent;
+  padding: 0.6rem 1.4rem;
+}
+button:hover {
+  opacity: 0.8;
+}
+/**************** UTILITIES SECTION ****************/
+.accent {
+  color: var(--clr-primary);
+}
+.small_title {
+  color: var(--clr-primary);
+  font-size: clamp(0.75rem, 3vw, 1.25rem);
+  margin-bottom: 0.85rem;
+}
+.primary_bg {
+  background-color: var(--clr-primary);
+  position: relative;
+}
+.img_container {
+  position: absolute;
+}
+.start {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  font-family: Poppins;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 600;
+}
+/**************** INTRO SECTION ****************/
+.intro .col-35 {
+  margin-left: auto;
+  margin-top: 1.81rem;
+  padding-right: 1rem;
+}
+.intro .col-65 {
+  max-width: 32.94rem;
+}
+.intro p {
+  margin-bottom: 1.12rem;
+}
+.intro .primary_bg {
+  flex-shrink: 0;
+  height: clamp(20.5rem, 30vw, 28rem);
+  margin-inline: auto;
+  width: clamp(13.5625rem, 20vw, 22.375rem);
+}
+.btn_group {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.learn {
+  background-color: transparent;
+  border: 1px solid var(--clr-black-300);
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  padding: 0.6rem 0;
+  transition: background 300ms ease-in;
+  width: 6.8rem;
+}
+.learn:hover {
+  background-color: #333;
+  color: white;
+}
+.learn:hover path {
+  fill: #fff;
+}
+.intro .img_container {
+  height: clamp(18.125rem, auto, 29.875rem);
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(14.44rem, 20vw, 24rem);
+}
+.intro_img {
+  object-fit: cover;
+  width: 100%;
+}
+.payment,
+.transfer {
+  align-items: center;
+  backdrop-filter: blur(5.5px);
+  background: rgba(242, 242, 242, 0.51);
+  display: flex;
+  gap: 0.5em;
+  position: absolute;
+}
+.payment {
+  border-radius: 0.8125rem;
+  bottom: 2.88rem;
+  gap: 0.5rem;
+  height: clamp(2.11rem, 3vw, 4.13rem);
+  left: -2rem;
+  padding-left: 4%;
+  width: clamp(7.7rem, 16vw, 13rem);
+}
+.payment_icon {
+  background-color: #aa2e04;
+  border-radius: 50%;
+  display: grid;
+  flex-shrink: 0;
+  height: clamp(1.4rem, 3vw, 2rem);
+  place-items: center;
+  width: clamp(1.4rem, 3vw, 2rem);
+}
+.payment_icon svg {
+  display: flex;
+  height: 50%;
+  width: 50%;
+}
+.payment_content {
+  font-size: clamp(0.5rem, 1vw, 0.85rem);
+  text-align: start;
+}
+.payment_content strong {
+  display: block;
+  white-space: nowrap;
+}
+.transfer {
+  border-radius: 0.73125rem;
+  flex-direction: column;
+  height: clamp(4.97rem, 9vw, 6.625rem);
+  justify-content: space-evenly;
+  padding: 0.5rem 2px 1rem;
+  right: -3.5rem;
+  text-align: center;
+  top: 0;
+  width: clamp(4.97rem, 9vw, 6.5rem);
+}
+.transfer_icon svg {
+  flex-shrink: 0;
+  height: 1.78rem;
+  width: 1.7rem;
+}
+.transfer_content {
+  font-size: clamp(0.5rem, 1vw, 0.8rem);
+  font-weight: 500;
+}
+/**************** TRUSTED SECTION ****************/
+.trusted {
+  margin-block: clamp(3rem, 5%, 6.25rem);
+  max-width: 50.44rem;
+  text-align: center;
+}
+.trusted h2 {
+  margin-bottom: 0.75rem;
+}
+/**************** ABOUT SECTION ****************/
+.about .col-35 {
+  order: 1;
+}
+.about .col-65 {
+  max-width: 33rem;
+}
+.about h3 {
+  margin-bottom: 0.75rem;
+}
+.about .content {
+  padding-block: 0.75rem;
+}
+.about .primary_bg {
+  height: clamp(15.6875rem, 22vw, 25.125rem);
+  width: clamp(14rem, 20vw, 22.375rem);
+}
+.about .img_container {
+  height: clamp(15.6875rem, auto, 25.125rem);
+  right: 1.5rem;
+  top: 1.3rem;
+  width: clamp(14rem, 20vw, 22.375rem);
+}
+/**************** HOW SECTION ****************/
+.how {
+  margin-bottom: 5rem;
+}
+.how .col-65 {
+  max-width: 40rem;
+}
+.how h3 {
+  margin-bottom: 0.75rem;
+}
+.how .primary_bg,
+.how .img_container {
+  height: clamp(16.85338rem, 22vw, 25.125rem);
+  width: clamp(15.00875rem, 20vw, 22.375rem);
+}
+.how .img_container {
+  right: 1.7rem;
+  top: 1.7rem;
+}
+/**************** WHY SECTION ****************/
+.why {
+  text-align: center;
+}
+.why h2 {
+  margin-bottom: 1.25rem;
+}
+.why h2 + p {
+  margin-bottom: 2rem;
+}
+.why .row {
+  align-items: center;
+  flex-direction: row;
+  font-size: clamp(0.5rem, 2vw, 0.94rem);
+  font-weight: 500;
+  gap: 1.47rem;
+  justify-content: space-between;
+}
+.benefit {
+  align-items: center;
+  border: 1px solid var(--clr-primary);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-shrink: 0;
+  height: clamp(3rem, 13vw, 9.7rem);
+  justify-content: center;
+  margin-inline: auto;
+  width: clamp(3.61rem, 15vw, 11.94rem);
+}
+.benefit img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
+}
+/**************** CREATE ACCOUNT SECTION ****************/
+.create_acct {
+  margin-bottom: 10rem;
+}
+.create_acct .col-65 {
+  order: 1;
+}
+.create_acct h2 {
+  margin-bottom: 1.31rem;
+}
+.ordered_list {
+  list-style: none;
+  padding-left: 2rem;
+  position: relative;
+  text-align: start;
+}
+.ordered_list::before {
+  background-color: var(--clr-primary);
+  content: "";
+  height: 78%;
+  left: 0.75rem;
+  position: absolute;
+  width: 0.125rem;
+}
+.ordered_list li {
+  margin-bottom: 1.88rem;
+  padding-left: 1.19rem;
+  position: relative;
+}
+.ordered_list li::before {
+  background-color: var(--clr-white);
+  border: 2px solid var(--clr-primary);
+  border-radius: 50%;
+  content: "";
+  height: 1.625rem;
+  left: -2rem;
+  position: absolute;
+  top: 0;
+  width: 1.625rem;
+}
+.ordered_list li::after {
+  color: var(--clr-primary);
+  content: counter(list-item);
+  font-size: 0.75rem;
+  left: -1.35rem;
+  position: absolute;
+  top: 0.3rem;
+}
+.ordered_list h3 {
+  font-size: 1rem;
+  margin-bottom: 0.62rem;
+}
+.create_acct .col-65 {
+  position: relative;
+}
+.create_acct .primary_bg {
+  height: clamp(18.62775rem, 21vw, 28.2rem);
+  left: -1rem;
+  position: relative;
+  width: clamp(16.8125rem, 20vw, 25.1rem);
+}
+.create_acct .img_container {
+  height: clamp(18.62775rem, 21vw, 28.2rem);
+  left: 1.8rem;
+  top: 1.8rem;
+  width: clamp(16.8125rem, 20vw, 25.1rem);
+}
+.create_acct .start {
+  font-weight: 400;
+}
+/**************** INSURANCE PLANS SECTION ****************/
+.insurance_plans h2 {
+  margin-bottom: clamp(1.25rem, 6%, 2rem);
+  margin-inline: auto;
+  max-width: 42.9375rem;
+}
+.insurance_plans .row {
+  display: grid;
+  font-family: Poppins;
+  justify-content: center;
+}
+.plan_card {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-inline: auto;
+  min-height: 22.5625rem;
+  padding: 1.2rem 1.1rem;
+  text-align: start;
+  width: 15.6875rem;
+}
+.card_price {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+.card_list {
+  font-size: 0.875rem;
+  list-style: none;
+}
+.card_list li {
+  margin-block: 0.6rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.card_list li::before {
+  content: url(/images/check.svg);
+  flex-shrink: 0;
+  height: clamp(0.5625rem, 1vw, 0.77rem);
+  left: 0;
+  position: absolute;
+  top: 0%;
+  width: clamp(0.5625rem, 1vw, 0.77rem);
+}
+.plan_card .start {
+  display: block;
+  font-weight: 500;
+  height: 2.25rem;
+  margin: clamp(1.56rem, 5%, 2.06rem) auto;
+  padding: 0;
+  width: 10.625rem;
+}
+.card_pointer {
+  margin-top: 2rem;
+}
+.card_pointer a {
+  color: var(--clr-white);
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  text-decoration: none;
+}
+.card_pointer svg {
+  flex-shrink: 0;
+  height: 0.5rem;
+  width: 1.3rem;
+}
+/**************** NEWSLETTER SECTION ****************/
+.newsletter {
+  background: var(--clr-black-300) url(../../images/newsletter_bg.png);
+  color: var(--clr-white);
+  margin-bottom: clamp(3.5rem, 10%, 4.75rem);
+  padding-block: 1.2rem 1.7rem;
+  text-align: center;
+}
+.newsletter .row {
+  align-items: center;
+  display: flex;
+  flex-direction: column !important;
+  margin-bottom: 0;
+  padding: 3rem 0;
+}
+.newsletter p {
+  max-width: 40rem;
+}
+.newsletter .row *:not(.row-2 *) {
+  margin-inline: auto;
+}
+.newsletter h2 {
+  margin-bottom: 0.75rem;
+}
+.row-2 {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: Poppins;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+.newsletter input {
+  border: none;
+  font-family: Poppins;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  padding: 0.6rem 1rem;
+  width: clamp(10.5rem, 50%, 31rem);
+}
+.subscribe {
+  background: #ee4b13;
+  color: var(--clr-white);
+  flex-shrink: 0;
+  font-family: Poppins;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  font-weight: 600;
+  padding: 0.66rem 1.8rem;
+}
+@media (min-width: 360px) {
+  .intro .col-35 {
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 400px) {
+  .intro .col-35 {
+    padding-right: 0rem;
+  }
+}
+@media (min-width: 400px) {
+  .intro .col-35 {
+    margin-inline: auto;
+  }
+}
+@media (min-width: 720px) {
+  /**************** MAIN / GENERAL STYLES ****************/
+  main {
+    text-align: start;
+  }
+  main section {
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 2.75rem);
+  }
+  .row:not(.legal) {
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /**************** INTRO SECTION ****************/
+  .intro .col-65 {
+    margin-top: 4%;
+  }
+  .intro .col-35 {
+    margin-inline: 0;
+  }
+  .btn_group {
+    justify-content: flex-start;
+  }
+  /**************** TRUSTED SECTION ****************/
+  .trusted {
+    margin-inline: auto;
+  }
+  /**************** ABOUT SECTION ****************/
+  .about .col-35 {
+    order: 0;
+  }
+  .about .img_container {
+    left: 2rem;
+    right: unset;
+    top: 1.5rem;
+  }
+  /**************** WHY SECTION ****************/
+  .why {
+    margin-bottom: 3rem;
+  }
+  /**************** CREATE ACCOUNT SECTION ****************/
+  .create_acct {
+    margin-bottom: 0rem;
+  }
+  .create_acct .col-35 {
+    max-width: 26.75rem;
+    order: 1;
+  }
+  .create_acct .primary_bg {
+    left: 0rem;
+  }
+  /**************** INSURANCE PLANS SECTION ****************/
+  .insurance_plans h2 {
+    text-align: center;
+  }
+  .insurance_plans .row {
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+  }
+  .plan_card {
+    margin-inline: unset;
+    max-width: 20.69rem;
+    width: 100%;
+  }
+}
+@media (min-width: 940px) {
+  /**************** INTRO SECTION ****************/
+  .payment {
+    left: -4rem;
+  }
+  .transfer {
+    right: -4.5rem;
+    top: -2rem;
+  }
+}
