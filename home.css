@@ -202,6 +202,9 @@ button:hover {
   top: 1.3rem;
   width: clamp(14rem, 20vw, 22.375rem);
 }
+.about .img_container img {
+  transform: rotateY(180deg);
+}
 /**************** HOW SECTION ****************/
 .how {
   margin-bottom: 5rem;
@@ -493,6 +496,10 @@ button:hover {
     left: 2rem;
     right: unset;
     top: 1.5rem;
+  }
+
+  .about .img_container img {
+    transform: unset;
   }
   /**************** WHY SECTION ****************/
   .why {
