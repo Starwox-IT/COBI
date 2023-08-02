@@ -162,6 +162,12 @@ input {
   cursor: pointer;
 }
 
+.eyes_img{
+  width: fit-content;
+  height: auto;
+  width: 1.56rem;
+}
+
 .register {
   border: none;
   border-radius: 0.625rem;
@@ -200,6 +206,14 @@ small {
 
 .sign-in {
   gap: 2rem;
+}
+
+.change_pass {
+  margin-top: 0.5em;
+}
+
+.change_pass a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
