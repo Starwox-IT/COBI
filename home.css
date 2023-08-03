@@ -32,10 +32,23 @@ button {
   border: none;
   cursor: pointer;
   outline: transparent;
-  padding: 0.6rem 1.4rem;
 }
 button:hover {
   opacity: 0.8;
+}
+
+button a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  outline: transparent;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+}
+
+.start a {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
 }
 /**************** UTILITIES SECTION ****************/
 .accent {
@@ -88,8 +101,7 @@ button:hover {
   background-color: transparent;
   border: 1px solid var(--clr-black-300);
   font-size: clamp(0.75rem, 1vw, 0.875rem);
-  padding: 0.6rem 0;
-  transition: background 300ms ease-in;
+  transition: background 300ms ease;
   width: 6.8rem;
 }
 .learn:hover {
@@ -98,6 +110,13 @@ button:hover {
 }
 .learn:hover path {
   fill: #fff;
+}
+.learn a {
+  padding: 0.6rem 0;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
 }
 .intro .img_container {
   height: clamp(18.125rem, auto, 29.875rem);

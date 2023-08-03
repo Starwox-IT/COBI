@@ -62,7 +62,7 @@ header.sticky {
   justify-content: space-between;
 }
 .is_mobile .logo_and_hamburger {
-  margin-bottom: 3.56rem;
+  margin-bottom: 3rem;
 }
 .logos,
 .logo {
@@ -79,7 +79,7 @@ header.sticky {
 }
 .nav_list {
   display: grid;
-  gap: 2rem;
+  gap: 1rem 2rem;
   list-style: none;
 }
 .is_mobile {
@@ -102,6 +102,20 @@ header.sticky {
 .nav_link:hover:not(.sign_up),
 .footer_link:hover {
   color: var(--clr-primary);
+}
+
+.sign_up {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  flex-shrink: 0;
+  height: 2.25rem;
+  text-align: center;
+  width: 7.1875rem;
+  margin-bottom: 1.5rem;
+}
+.sign_up:hover {
+  opacity: 0.75;
+  transition: opacity 100ms;
 }
 /***************** Footer *****************/
 footer {
@@ -206,18 +220,6 @@ li span:last-child {
   }
   .nav_link {
     padding: 0.5em;
-  }
-  .sign_up {
-    background-color: var(--clr-primary);
-    color: var(--clr-white);
-    flex-shrink: 0;
-    height: 2.25rem;
-    text-align: center;
-    width: 7.1875rem;
-  }
-  .sign_up:hover {
-    opacity: 0.75;
-    transition: opacity 100ms;
   }
   /***************** Footer *****************/
   footer .logo {
