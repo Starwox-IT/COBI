@@ -33,10 +33,10 @@ const toggle_vision = () => {
   inputType = passwordInput.getAttribute("type");
   if (inputType == "password") {
     passwordInput.setAttribute("type", "text");
-    eyes.setAttribute("src", "../../images/open_eyes.png");
+    eyes.setAttribute("src", "../../images/eyes.svg");
   } else {
     passwordInput.setAttribute("type", "password");
-    eyes.setAttribute("src", "../../images/eyes.svg");
+    eyes.setAttribute("src", "../../images/open_eyes.png");
   }
 
   console.log("works");
