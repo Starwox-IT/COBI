@@ -221,6 +221,9 @@ li span:last-child {
   .nav_link {
     padding: 0.5em;
   }
+  .sign_up {
+    margin-bottom: 0rem;
+  }
   /***************** Footer *****************/
   footer .logo {
     margin-inline: unset;
