@@ -12,7 +12,6 @@ main {
   gap: 2rem 5rem;
   margin-bottom: 9%;
 }
-
 h2,
 h3,
 .newsletter h2 {
@@ -21,13 +20,11 @@ h3,
 p {
   font-family: Poppins;
 }
-
 h2 + p {
   margin-bottom: 2rem;
-  max-width: 38.9rem;
   margin-inline: auto;
+  max-width: 38.9rem;
 }
-
 img {
   width: 100%;
 }
@@ -63,74 +60,32 @@ button:hover {
   font-size: clamp(0.75rem, 1vw, 0.875rem);
   font-weight: 600;
 }
-
 /**************** INTRO SECTION ****************/
-
 .intro {
   background: white url(../../images/about_bg.png) no-repeat;
   background-size: cover;
   color: #fff;
-  text-align: center;
   margin-bottom: 3rem;
   padding-block: 7rem 6rem;
+  text-align: center;
 }
-
 .intro h1 {
-  margin-block: 1.63rem 0.75rem;
   font-size: clamp(2.55rem, 3vw, 2.8rem);
+  margin-block: 1.63rem 0.75rem;
 }
-
 .intro p {
   font-size: clamp(1rem, 3vw, 1.125rem);
 }
-
-/**************** SERVICES SECTION ****************/
-
-.services {
-  margin-bottom: 4rem;
-}
-.services h2,
-.services h2 + p {
-  text-align: center;
-}
-
-.services h3 {
-  font-family: Poppins;
-  color: #092c4c;
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1.65rem;
-  margin-bottom: 0.5rem;
-}
-
-.services .row {
-  gap: 2.5rem 1rem;
-}
-
-.services .col {
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(189, 189, 189, 0.8);
-  max-width: 20.3rem;
-  overflow: hidden;
-}
-
-.services .content {
-  padding: 1.5rem;
-}
 /**************** ABOUT SECTION ****************/
-
 .about {
   margin-bottom: 4rem;
 }
 .about .col-65 {
-  padding-top: 2.5rem;
   max-width: 33rem;
+  padding-top: 2.5rem;
 }
 .about h2 {
   margin-bottom: 1.2rem;
-}
-.about .content {
-  padding-block: 1.2rem;
 }
 .about .primary_bg {
   height: clamp(15.6875rem, 22vw, 25.125rem);
@@ -145,16 +100,42 @@ button:hover {
 .about .img_container img {
   transform: rotateY(180deg);
 }
-
+/**************** SERVICES SECTION ****************/
+.services {
+  margin-bottom: 4rem;
+}
+.services h2,
+.services h2 + p {
+  text-align: center;
+}
+.services h3 {
+  color: #092c4c;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.65rem;
+  margin-bottom: 0.5rem;
+}
+.services .row {
+  gap: 2.5rem 1rem;
+}
+.services .col {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(189, 189, 189, 0.8);
+  max-width: 20.3rem;
+  overflow: hidden;
+}
+.services .content {
+  padding: 1.5rem;
+}
 /**************** WHY SECTION ****************/
 .why {
-  text-align: center;
   margin-bottom: 4rem;
+  text-align: center;
 }
 .why h2 {
   margin-bottom: 1.25rem;
 }
-
 .why h3 {
   font-family: Poppins;
   font-size: 1.125rem;
@@ -168,13 +149,13 @@ button:hover {
   grid-template-columns: 1fr;
 }
 .why .col {
+  border: 1px solid var(--clr-primary);
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  text-align: start;
-  border: 1px solid var(--clr-primary);
-  border-radius: 0.625rem;
   padding: 1rem;
+  text-align: start;
 }
 .benefit {
   display: grid;
@@ -182,11 +163,10 @@ button:hover {
   width: 10rem;
 }
 .benefit img {
-  width: 7.00425rem;
   height: 5.684rem;
   object-fit: contain;
+  width: 7.00425rem;
 }
-
 /**************** NEWSLETTER SECTION ****************/
 .newsletter {
   background: var(--clr-black-300) url(../../images/newsletter_bg.png);
@@ -236,7 +216,6 @@ button:hover {
   font-weight: 600;
   padding: 0.66rem 1.8rem;
 }
-
 @media (min-width: 720px) {
   /**************** MAIN / GENERAL STYLES ****************/
   main {
@@ -259,7 +238,6 @@ button:hover {
     margin-bottom: 3rem;
   }
 }
-
 @media (min-width: 850px) {
   .why .row {
     gap: 2rem 2.5rem;
